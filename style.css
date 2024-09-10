@@ -1,0 +1,273 @@
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.container-profile {
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #ab2c09;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.navbar .container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-header a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.navbar .navbar-right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-right li {
+  display: inline;
+}
+
+.navbar .navbar-right li a,
+.navbar .navbar-right li button {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-right li a:hover,
+.navbar .navbar-right li button:hover {
+  background-color: white;
+  color: #ab2c09;
+}
+
+.container {
+  width: 100%;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.col-left {
+  flex: 0 0 65%;
+  padding-right: 15px;
+}
+
+.col-right {
+  flex: 0 0 30%;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .col-left,
+  .col-right {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  .col-left {
+    margin-bottom: 20px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-left-custom {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-right-custom {
+  flex: 0 0 65%;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-left-custom,
+  .col-right-custom {
+    flex: 0 0 100%;
+  }
+
+  .col-right-custom {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.col {
+  flex: 0 0 22%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.thumbnail-custom {
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.thumbnail {
+  padding: 10px;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.thumbnail-custom:hover {
+  transform: scale(1.05);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f0ad4e;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col {
+    flex: 0 0 100%;
+  }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.contact-info {
+  width: 45%;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  width: 48%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}
