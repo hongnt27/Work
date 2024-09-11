@@ -6,126 +6,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
   <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+<!-- Header -->
 <nav class="navbar">
   <div class="container-nav">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#myPage">Home</a>
+      <a class="navbar-brand" href="#myPage">ホームページ</a>
     </div>
     <div class="navbar-collapse" id="myNavbar">
       <ul class="nav navbar-right">
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#profile">導入</a></li>
+        <li><a href="#hobbies">趣味</a></li>
+        <li><a href="#country">国</a></li>
+        <li><a href="#contact">連絡先。</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container text-center">
-  <img src="./asset/ảnh nền.PNG" width="1400" height="300">
-  <h1>Đậu Đình Đạt</h1> 
-  <p>You can fly, you can fly, you can fly </p> 
+  <img src="./asset/ban.jpg" height="300" class="image">
+  <h1>
+  <marquee class="marquee" direction="left" style="color: #4C4C4C;">Dau Dinh Dat のウェブサイトへようこそ!</marquee> 
+  </h1>
+  <p>ただ一生懸命働けば、成功は必ずついてきます。
+</p> 
 </div>
 
 <!-- Container (Profile Section) -->
 
-<div id="profile" class="container">
+<div id="profile" class="container profile">
   <div class="row">
     <div class="col-left">
-      <h2>Giới thiệu</h2>
-      <h4 class="text-justify">Hi there, I’m Alex, a 25-year-old software developer. I have a passion for creating innovative apps that make life easier.</h4>
-      <h4 class="text-justify"> When I’m not coding, you’ll find me exploring the great outdoors, hiking, and camping with my friends. Family means the world to me, and I’m really lucky to have a supportive family that encourages my dreams.</h4>
+      <h2>教育</h2>
+      <h4 class="text-justify">・2024年04月に東進ランゲージスクールを卒業しました。現在読売理工福祉専門学校のITエンジニアで学んでいます。</h4>
+      <h4 class="text-justify">・2023年12月日本語能力試験レベルN2を受けて合格しました。</h4>
+    
+      <h2>スキル</h2>
+      <div class="content-edu">
+        <div>
+          <div class="edu">
+            <p>CSS</p>
+            <progress value="80" max="100"></progress>
+          </div>
+          <div class="edu">
+            <p>HTML</p>
+            <progress value="90" max="100"></progress>
+          </div>
+        </div>
+        <div>
+          <div class="edu">
+            <p>Excel</p>
+            <progress value="50" max="100"></progress>
+          </div>
+          <div class="edu">
+            <p>Word</p>
+            <progress value="90" max="100"></progress>
+          </div>
+        </div>
+      </div>
+      
     </div>
     <div class="col-right">
-      <img src="./asset/shop-cafe..jpg" alt="" width="400px" height="300px" style="border-radius: 10%;">
+      <img src="./asset/avatar_dat.jpg" alt="" width="400px" height="550px" style="border-radius: 10%;">
     </div>
   </div>
 </div>
 
 <div class="container bg-grey">
   <div class="row">
-    <div class="col-left-custom">
+    <div>
        <img src="./asset/logo.jpg" alt="logo" width="300" height="300">
+       <h4 class="text-center">Nelson maldela</h4>
     </div>
     <div class="col-right-custom">
-      <h4>I really enjoy listening to music. However, I don’t have any standards in genre selection, I like to listen to any kind of music as long as it’s good. </h4>
-      <h4>When I’m happy, I usually listen to songs with cheerful melodies. When I’m sad, I often listen to ballad songs. Every morning when I walk or do my housework, I always carry headphones with me and listen to them. A day with music, I study very effectively. I am keen on hearing them because all the songs bring back lovely memories. Listening to new songs is also awesome. You can feel your life is more beautiful thanks to music.</h4>
+      <h4>何事も成功するまでは不可能に思えるものである。（ネルソン・マンデラ）</h4>
     </div>
   </div>
 </div>
 
-<!-- Container (Project Section) -->
-<div id="project" class="container text-center">
-  <h2>Project</h2>
-  <h4>Một năm qua tôi đã tham gia 3 project</h4>
+<!-- Container (Hobbies Section) -->
+<div id="hobbies" class="container text-center">
+  <h2>興味</h2>
   <br>
-  <div class="row">
-    <div class="col">
+  <div class="content-hobbies">
       <div class="thumbnail-custom">
-        <img src="./asset/K1.PNG" alt="Hà Nội" width="400" height="300">
-        <p><strong>Swype Bytes</strong></p>
-        <p>Team size: 12 người</p>
-        <p>Khách hàng: Nhật Bản</p>
-        <button>Like</button>
-      </div>
-    </div>
+        <div class="image-container">
+            <img src="./asset/casi.webp" alt="Image" width="400" height="500">
+            <div class="overlay">好きな歌手: Son Tung <br/> 好きな音楽ジャンル: 若者の音楽</div>
 
-    <div class="col">
-      <div class="thumbnail-custom">
-        <img src="./asset/K2.PNG" alt="Đà Nẵng" width="400" height="300">
-        <p><strong>Stratio</strong></p>
-        <p>Team size: 10 người</p>
-        <p>Khách hàng: Trung Quốc</p>
-        <button>Like</button>
-      </div>
-    </div>
+        </div>
+            <h4>音楽</h4>
 
-    <div class="col">
+      </div>
       <div class="thumbnail-custom">
-        <img src="./asset/K4.jpg" alt="TP Hồ Chí Minh" width="400" height="300">
-        <p><strong>Songgary</strong></p>
-        <p>Team size: 2 người</p>
-        <p>Khách hàng: Hàn Quốc</p>
-        <button>Like</button>
+        <div class="image-container">
+            <img src="./asset/H2.jpg" alt="Image" width="400" height="500">
+            <div class="overlay">子供の頃サッカーをよくしました。いまでもしています。サッカーが大好きです。私のアイドルはクリスティアーノロナウドです。私は彼の性格と彼の一番のプレースタイルが好きです。現在、私は週末によく友達とサッカーをしています。
+              </div>
+        </div>
+        <h4>フットボール</h4>
+      </div>
+      <div class="thumbnail-custom">
+        <div class="image-container">
+          <div id="slideshow">
+            <div class="slide-wrapper">
+              <div class="slide">
+                <img src="./asset/T1.jpg" alt="Image" width="400" height="450">
+              </div>
+              <div class="slide">
+                <img src="./asset/T5.jpg" alt="Image" width="400" height="450">
+              </div>
+              <div class="slide">
+                <img src="./asset/T3.jpg" alt="Image" width="400" height="450">
+              </div>
+              <div class="slide">
+                <img src="./asset/T4.jpg" alt="Image" width="400" height="450">
+              </div>
+              <div class="slide">
+                <img src="./asset/T6.jpg" alt="Image" width="400" height="450">
+              </div>
+              <div class="slide">
+                <img src="./asset/T7.jpg" alt="Image" width="400" height="450">
+              </div>
+              <div class="slide">
+                <img src="./asset/T2.jpg" alt="Image" width="400" height="450">
+              </div>
+            </div>
+          </div>
+          <div class="overlay">子供の頃サッカーをよくしました。いまでもしています。サッカーが大好きです。私のアイドルはクリスティアーノロナウドです。私は彼の性格と彼の一番のプレースタイルが好きです。現在、私は週末によく友達とサッカーをしています。</div>
+        </div>
+          <h4>観光</h4>
       </div>
     </div>
-  </div>
 </div>
 
-<!-- Container (Team Section) -->
-<div id="team" class="container text-center bg-grey">
-  <h2>Our team</h2>
-  <h4>Gồm 3 thành viên</h4>
+<!-- Container (Country Section) -->
+<div id="country" class="container text-center bg-grey">
+  <h2>私の国</h2>
   <div class="row">
   <div class="col">
     <div class="thumbnail">
-      <img src="./asset/b1.PNG" alt="Hà Nội" width="400" height="300">
-      <p><strong>Minh Hưng</strong></p>
-      <p>Frontend Developer</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5738847216435!2d105.55217691435547!3d18.665700097031278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ad5638bfc4b469%3A0xa0031f80c9bcd26e!2zVGh%C3A0nh%20c3A0%BB%2CIFVpw6NuIE5hbQ!5e0!3m2!1svi!2sVN!4v1563710994290!5m2!1svi!2sVN" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <p><strong>地図</strong></p>
+      <p>Tヴィン市</p>
     </div>
   </div>
 
   <div class="col">
     <div class="thumbnail">
-      <img src="./asset/b2.PNG" alt="Đà Nẵng" width="400" height="300">
-      <p><strong>Hoàng Nguyên</strong></p>
-      <p>Backend Developer</p>
+      <img src="./asset/dac-san.jpeg" alt="Đà Nẵng" width="400" height="300">
+      <p><strong>専門</strong></p>
+      <p>うなぎ雑炊、ぬれケーキ、雑炊…。</p>
     </div>
   </div>
 
   <div class="col">
     <div class="thumbnail">
-      <img src="./asset/b3.PNG" alt="TP Hồ Chí Minh" width="400" height="300">
-      <p><strong>Trần Quang</strong></p>
-      <p>Tester</p>
+      <img src="./asset/Vinh.webp" alt="TP Hồ Chí Minh" width="400" height="300">
+      <p><strong>Tヴィン市</strong></p>
+      <p>ヴィン市​​は、ベトナムのゲアン省の第 1 級都市地域です。</p>
     </div>
   </div>
 </div>
@@ -133,26 +178,31 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">  
-  <h2 class="text-center">CONTACT</h2>
+  <h2 class="text-center">接触</h2>
   <div class="contact-container">
     <div class="contact-info">
-      <p>Hãy liên lạc với chúng tôi.</p>
-      <p><span class="icon">📍</span> Vietnam</p>
-      <p><span class="icon">📞</span> +00 1515151515</p>
-      <p><span class="icon">✉️</span> myemail@something.com</p>
+      <div>連絡してください</div>
+      <p class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://line.me" target="_blank" class="line"><i class="fab fa-line"></i></a>
+      </p>
+      <div><span class="icon">📍</span>東京都新宿区百人町2丁目17番12 マンション和光　401号。</div>
+      <p><span class="icon">📞</span>08064720410</p>
+      <p><span class="icon">✉️</span>daudinhdat0410@gmail.com</p>
     </div>
 
     <div class="contact-form">
       <div class="form-row">
         <div class="form-group">
-          <input id="name" name="name" placeholder="Họ tên" type="text" required>
+          <input id="name" name="name" placeholder="フルネーム" type="text" required>
         </div>
         <div class="form-group">
-          <input id="email" name="email" placeholder="Email" type="email" required>
+          <input id="email" name="email" placeholder="電子メール" type="email" required>
         </div>
       </div>
-      <textarea id="comments" name="comments" placeholder="Phản hồi" rows="5"></textarea><br>
-        <button type="submit">Gửi</button>
+      <textarea id="comments" name="comments" placeholder="フィードバック" rows="5"></textarea><br>
+        <button type="submit">送信</button>
     </div>
   </div>
 </div>
