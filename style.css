@@ -129,6 +129,12 @@ h4 {
   .col-left {
     margin-bottom: 20px;
   }
+  .row {
+    justify-content: center !important;
+  }
+  .content-hobbies {
+    justify-content: center !important;
+  }
 }
 
 .row {
@@ -180,6 +186,7 @@ h4 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f8eded;
+  margin-bottom: 20px;
 }
 
 .thumbnail {
