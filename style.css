@@ -62,7 +62,7 @@ h4 {
 .navbar .container-nav {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .navbar-header a {
@@ -339,6 +339,7 @@ button:hover {
 .image-container img {
   width: 400px;
   height: 450px;
+  object-fit: cover;
 }
 
 .overlay {
@@ -369,8 +370,8 @@ button:hover {
 }
 
 .slide-wrapper {
-  width: 2000px;
-  -webkit-animation: slide 8s ease infinite;
+  width: 2800px;
+  -webkit-animation: slide 10s ease infinite;
 }
 
 .slide {
@@ -380,14 +381,11 @@ button:hover {
 }
 
 @-webkit-keyframes slide {
-  10% {
+  20% {
     margin-left: 0px;
   }
-  20% {
-    margin-left: -400px;
-  }
   30% {
-    margin-left: -800px;
+    margin-left: -400px;
   }
   40% {
     margin-left: -800px;
@@ -396,15 +394,19 @@ button:hover {
     margin-left: -1200px;
   }
   60% {
-    margin-left: -1200px;
+    margin-left: -1600px;
   }
   70% {
-    margin-left: -1600px;
+    margin-left: -2000px;
   }
   80% {
-    margin-left: -1600px;
+    margin-left: -2400px;
   }
-  90% {
-    margin-left: -1600px;
+  100% {
+    margin-left: -2400px;
   }
+}
+
+.facebook {
+  color: blue;
 }
